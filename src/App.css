@@ -1,0 +1,146 @@
+body{
+    padding: 2px;
+    background-color: rgb(44, 0, 114);
+}
+
+.slide{
+    width: 201vh;
+    height: 96vh;
+}
+
+.slide img{
+    width: 100vw;   
+    height: 94vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hue, .hue1 {
+    top: 60vw;
+    left: 40vw;
+    height: 700px;
+    width: 80%;
+    background-color: #d4dfff60;
+    position: absolute;
+    filter: blur(200px);
+    box-shadow: 20px 12px 50px rgb(28, 0, 185);
+}
+
+.hue1{
+    top: 120vw;
+    left: 0vw;
+    width: 50%;
+}
+
+.startBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.startBtn button{
+    padding: 10px 50px;
+}
+
+.imageInfoDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 100px;
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 5vw;
+}
+
+.imageInfoDiv img{
+    border-radius: 20px;
+    width: 400px;
+}
+
+.imageInfoDiv .info{
+    padding: 20px 20px;
+    width: 40%;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.info h2{
+    margin: 30px 0px;
+}
+
+.info p{
+    font-size: 24px;
+    text-align: justify;
+}
+
+.lastInfo{
+    height: 100px;
+    font-size: 30px;
+}
+
+.feedback{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: #242424;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.gooye{
+    height: 20vw;
+    width: 20vw;
+    background:linear-gradient(to top,rgb(255, 81, 0), rgb(255, 60, 0));
+    position: absolute;
+    top: 15vw;
+    left :50vw;
+    border-radius: 50%;
+    filter: blur(15px);
+    animation-name: ball;
+    animation-duration:6s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes ball{
+    from{
+        transform: translate(10%, -10%)skew(0);
+    }
+    to{
+        transform: translate(-10%, 10%)skew(10deg);
+    }
+}
+
+.octagon{
+    height: 15vw;
+    width: 15vw;
+    background:linear-gradient(to top,rgb(255, 81, 0), rgb(255, 60, 0));
+    position: absolute;
+    top: 15vw;
+    left :10vw;
+    border-radius: 30%;
+    filter: blur(20px);
+    animation-name: octagon;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes octagon{
+    from{
+        transform:rotate(360deg)skew(0);
+    }
+    to{
+        transform: rotate(-360deg)skew(5deg);
+    }
+}
+
+

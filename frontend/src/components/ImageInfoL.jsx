@@ -6,13 +6,15 @@ import img4 from '../assets/img4.jpg'
 function ImageInfo(props) {
   return (
     <>
+    <section className='section2'>
+
     <div className="imageInfoDiv">
       <div className="img">
         <img src={img1} className="img-fluid" alt="image"></img>
       </div>
         <div className="info">
            <h2>Talk, text, and share without limits!</h2>
-           <p>Enjoy the freedom of boundless communication! Send as many messages as you want, make high-quality video calls without limits, and share images, videos, and files effortlessly. Whether you're catching up with friends, collaborating on a project, or sharing life’s moments, our platform keeps you connected—without restrictions.</p>
+           <p>Enjoy the freedom of boundless communication! Send as many messages as you want, make high-quality video calls without limits, and share images, videos, and files effortlessly. Whether you're catching up with friends, collaborating on a project, or sharing life’s moments, our platform keeps you connected without any restrictions.</p>
         </div>
         <div className="gooye">
         </div>
@@ -28,8 +30,8 @@ function ImageInfo(props) {
         <div className="img">
         <img src={img3} className="img-fluid" alt="image"></img>
       </div>
-        <div className='octagon'></div>
     </div>
+        <div className='octagon'></div>
 
     <div className="imageInfoDiv">
     <div className="img">
@@ -44,6 +46,7 @@ function ImageInfo(props) {
         <div className="gooye">
         </div>
     </div>
+    </section>
     </>
   )
 }

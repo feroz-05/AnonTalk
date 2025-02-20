@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 2px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    font-family:"Roboto", serif;
+}
+
+.navbar-main{
+    margin-top: 20px;
+    height: 20px;
+    top: 0;
+    z-index: 100;
+    position: relative;
+    color: aqua;
+}
+
+.navbar-main .container-fluid{
+    position: relative;
+    left: 40vh;
+    display: flex;
+    gap: 25vh;
+}
+.navbar-main a{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 10vh;
+    color:white;
+}
+
+.navbar-main a:hover{
+    text-decoration: underline;
+}
+
+.Video-Buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20vh;
+    margin: 40px 30px;
+}
+
+.login-btn{
+    background-color: white;
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all .5s;
+    position: relative;
+    left: 20vh;
+    top: px;
+}
+
+.login-btn:hover{
+    background-color: black;
+}
+
+
+
+.slide img{
+    height: 94vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hue, .hue1 {
+    top: 90vw;
+    left: 40vw;
+    height: 200px;
+    background-color: #2c00a3ab;
+    position: absolute;
+    box-shadow: 10px 10px 50px #33005e65;
+    animation-name: hueAni;
+    animation-duration:15s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    border-radius: 30%;
+    filter: blur(80px);
+}
+
+@keyframes hueAni {
+    from{
+        transform: rotate(0deg)skew(0);
+    }
+    to{
+        transform: rotate(360deg)skew(30deg);
+    }
+}
+
+.hue1{
+    top: 10vw;
+    left: -5vw;
+    width: 1000px;
+    height: 800px;
+    z-index: -1;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    padding: 0px 100px;
+
+
+}
+
+
+.imageInfoDiv{
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(500px);
+    border-color: rgba(0, 89, 255, 0.466);
+    border-width: 1px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px;
+    font-size: 30px;
+    position: relative;
+    
+    border-radius: 30px;
+    margin: 50px;
+}
+
+.imageInfoDiv img{
+    border-radius: 20px;
+    width: 400px;
+}
+
+.imageInfoDiv .info{
+    padding: 20px 20px;
+    width: 50%;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+.info h2{
+    margin: 30px 0px;
+    font-size: 50px;
+}
+
+.info p{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.lastInfo{
+    height: 100px;
+    font-size: 30px;
+    
+}
+marquee{
+    font-size: 50px;
+    backdrop-filter: blur(500px);
+    background-color: #000000;
+    color: rgb(238, 238, 238);
+    font-weight: bolder;
+  
+}
+
+.feedback{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: #242424;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.gooye{
+    z-index: -10;
+    height: 20vw;
+    width: 20vw;
+    background:linear-gradient(to top,rgba(19, 2, 253, 0.568), rgba(126, 1, 151, 0.671));
+    position: absolute;
+    top: 15vw;
+    left :50vw;
+    border-radius: 50%;
+    filter: blur(100px);
+    animation-name: ball;
+    animation-duration:7s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes ball{
+    from{
+        transform: translate(10%, -10%)skew(0);
+    }
+    to{
+        transform: translate(-10%, 10%)skew(10deg);
+    }
+}
+
+.octagon{
+    z-index: -1;
+    height: 50vw;
+    width: 70vw;
+    background-color: #190074b4;
+    position: absolute;
+    top: 90vw;
+    left :15vw;
+    border-radius: 30%;
+    filter: blur(200px);
+    animation-name: octagon;
+    animation-duration:15s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes octagon{
+    from{
+        transform: rotate(0deg)skew(0);
+        
+    }
+    to{
+        transform: rotate(360deg)skew(0);
+    }
+}
+
+
